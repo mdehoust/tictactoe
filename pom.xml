@@ -45,4 +45,25 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>stats</id>
+      <properties>
+        <exec.mainClass>io.github.mdehoust.tictactoe.Simulation</exec.mainClass>
+      </properties>
+    </profile>
+    <profile>
+      <id>term</id>
+      <properties>
+        <exec.mainClass>io.github.mdehoust.tictactoe.ui.terminal.TerminalGame</exec.mainClass>
+      </properties>
+    </profile>
+    <profile>
+      <id>gui</id>
+      <properties>
+        <exec.mainClass>io.github.mdehoust.tictactoe.ui.swing.TicTacToe</exec.mainClass>
+      </properties>
+    </profile>
+  </profiles>
 </project>
