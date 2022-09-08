@@ -5,12 +5,15 @@ This is a toy project for my own amusement. Some of it is test-driven, some of i
 Try these commands.
 
 ```sh
+# Compile and package
+./mvnw package
+
 # Play the game using a Swing-based user interface
-java -jar tictactoe.jar
+./mvnw exec:java -Pgui
 
 # Play the game in your terminal
-java -jar tictactoe.jar terminal
+./mvnw exec:java -Pterm
 
 # Run a simulation pitting all the player types against each other and dump out some stats
-java -jar tictactoe.jar stats
+./mvnw exec:java -Pstats
 ```
