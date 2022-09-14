@@ -17,3 +17,11 @@ Try these commands.
 # Run a simulation pitting all the player types against each other and dump out some stats
 ./mvnw exec:java -Pstats
 ```
+
+> If you need to install Java, I recommend [sdkman](https://sdkman.io). 
+> ```sh
+> # Install sdkman
+> curl -s "https://get.sdkman.io" | bash
+> # Use sdkman to install the latest stable Java
+> sdk install java
+> ```
